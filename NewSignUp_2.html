@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Snow Shovelers Volunteer Sign Up</title>
+    <title>DeBlizzard Sign Up</title>
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script>
@@ -63,15 +63,23 @@
             <input type="password" id="cpwd" name="cpwd" required />
             <label for="address">Address [Address, City, Province] </label>
             <input type="text" id="address" name="address" required />
+            <label for="user-type">Are you a:</label>
+        <div class="radio-container">
+          <input type="radio" id="volunteer" name="user-type" value="volunteer">
+          <label for="volunteer">Volunteer</label>
+          <input type="radio" id="customer" name="user-type" value="customer">
+          <label for="customer">Customer</label>
+        </div>
             <button onclick = "saveUserInfo()" type="button">Sign Up</button>
-          </div>
+      </div>
+          
         </form>
       </div>
       <div class="right-side">
         <div class="darkPanel">
         </div>
-        <h2 id="CommunityText">Join the Volunteer Community!</h2>
-            <img src ="images/snowman.png" 
+        <h2 id="CommunityText">Welcome to DeBlizzard!</h2>
+            <img src ="snowman.png" 
               width = 800
               height = 500 />
     
@@ -79,7 +87,7 @@
                <span><div>
                     <p id="HaveAccount">Already have an account?</p>
                 </div></span>
-                <button onclick = "saveUserInfo()" type="submit">Sign Up</button>
+                <button onclick = "saveUserInfo()" type="submit">Sign In</button>
               </div>
            </div>
         </div>

@@ -6,7 +6,7 @@
     <meta name="author" content="DeBlizzard">
     <meta name="description" content="">
     <meta name="keywords" content="">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c6ffe2ba2c.js" crossorigin="anonymous"></script>
@@ -19,23 +19,43 @@
       <div class="banner">
         <h1 class="side-by-side">DeBlizzard</h1>
         <div class="banner-right">          
-          <div class="side-by-side"><a href="#opportunities">About Us</a></div>
-          <div class="side-by-side"><a href="#contact">Contact</a></div>          
+          <div class="side-by-side"><a href="about.html">Meet Our Team</a></div>
+          <div class="side-by-side"><a href="contact-us.html">Contact Us</a></div>          
         </div>
       </div>
       <div class="introduction" style="padding-top: 150px;">
         <div style="float: left;">
-            <h1>Small Hands. Big Heart.</h1>
-            <h3><div>If you need help during the colder months, we are here</div>to help. Connect with our volunteer snow shovelors today!</h3>
+          <h1 id="read-aloud-text"> <div>Small Hands. </div>Big Heart.</h1>
+          <h3><div>If you need help during the colder months, we are here</div>to help. Connect with our volunteer snow shovelors today!</h3>
         </div>
         <div style="float: right; height: 300px; width: 300px; padding-top: 90px;">
-            <a class="side-by-side-button" href="#login">Log In</a>
-            <a class="side-by-side-button" href="#signup">Sign Up</a>
+            <a class="side-by-side-button" href="login.html">Log In</a>
+            <a class="side-by-side-button" href="NewSignUp_2.html">Sign Up</a>
+            <button id="read-aloud-btn">Read Aloud</button> 
+
         </div>
+      </div>
+      <div class="testimonial">
+        <blockquote>
+          "DeBlizzard made my life so much more convenient! My knees have never felt better!! I 100% recommend. Thank you DeBlizzard Team!"
+        </blockquote>
+        <cite>- Nancy Steven </cite>
       </div>
     </header>
 
-    <footer>&copy; Copyright 2024 Java Monkeys</footer>
+
+    <script>
+      // Add event listener to the button
+      document.getElementById('read-aloud-btn').addEventListener('click', function() {
+        const titleText = document.getElementById('read-aloud-text').textContent.trim(); // Get the title text content
+        const contentText = document.querySelector('.introduction h3').textContent.trim(); // Get the content text content
+        const textToRead = titleText + ". " + contentText; // Concatenate title and content text
+        const utterance = new SpeechSynthesisUtterance(textToRead); // Create new utterance
+        utterance.lang = 'en-US'; // Set language if necessary
+        window.speechSynthesis.speak(utterance); // Speak the text
+      });
+    </script>
+
 
 
     <script src="script.js"></script>
@@ -45,4 +65,5 @@
     </script>
 
   </body>
+  <footer>&copy; Copyright 2024 Java Monkeys</footer>
 </html>
