@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="author" content="DeBlizzard">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c6ffe2ba2c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="contact-style.css">
+    <title>Contact Us</title>
+    <script>
+      function loadUserInfo() {
+        var email = localStorage.getItem('email');
+        var username = localStorage.getItem('username');
+        var address = localStorage.getItem('address');
+        var password = localStorage.getItem('password');
+      }
+
+      document.getElementById('add').innerHTML = address;
+      document.getElementById('eadd').innerHTML = email;
+
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <h1 class="side-by-side">DeBlizzard</h1>
+        <div class="banner-right">          
+          <div class="side-by-side"><a href="#opportunities">About Us</a></div>
+          <div class="side-by-side"><a href="#contact">Contact</a></div>          
+        </div>
+      </div>
+    </header>
+    <div class="introduction">
+      <h1 style="font-size: 40px;">Let's get in touch!</h1>
+      <div class="individual-contacts" style="margin-top: 60px;">
+        <div class="person" style="float: left;">
+            <div class="photo" style="float: left; margin-right: 20px;">
+                <img src="images/aishu.jpg" alt="aishu" width="500" height="50">
+            </div>
+            <div class="links">
+                <h2>Aishwarya Tandon</h2>
+                <label>Email: <a class="links-a" href="mailto:aishutandon.at@gmail.com">aishutandon.at@gmail.com</a></label>
+            </div>
+        </div>
+        <div class="person" style="float: right;">
+            <div class="photo" style="float: left; margin-right: 20px;">
+                <img src="images/anahat.jpg" alt="anahat" width="500" height="50">
+            </div>
+            <div class="links">
+                <h2>Anahat Chhatwal</h2>
+                <label>Email: <a class="links-a" href="mailto:anahatkchhatwal@gmail.com">anahatkchhatwal@gmail.com</a></label>
+            </div>
+        </div>
+        <div class="person" style="float: left;" >
+            <div class="photo" style="float: left; margin-right: 20px; ">
+                <img src="images/sajini.jpg" alt="sajini" width="500" height="50">
+            </div>
+            <div class="links">
+                <h2>Sajini Nirmalan</h2>
+                <label>Email: <a class="links-a" href="mailto:saji01235@gmail.com">saji01235@gmail.com</a></label>
+            </div>
+        </div>
+        <div class="person" style="float: right;">
+            <div class="photo" style="float: left; margin-right: 20px;">
+                <img src="images/vrinda.jpg" alt="vrinda" width="500" height="50">
+            </div>
+            <div class="links">
+                <h2>Vrinda Joshi</h2>
+                <label>Email: <a class="links-a" href="mailto:vrindajoshi30@gmail.com">vrindajoshi30@gmail.com</a></label>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <footer>&copy; Copyright 2024 Java Monkeys</footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>
